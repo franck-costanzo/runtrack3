@@ -13,7 +13,9 @@ function tri(x,y)
                     
                     if(x[j+1] < x[j])
                     {
-                        [x[j + 1],x[j]] = [x[j],x[j + 1]]
+                        let temp = x[j];
+                        x[j] = x[j+1];
+                        x[j+1] = temp;
                     }
                     
                 }
@@ -34,7 +36,9 @@ function tri(x,y)
                     
                     if(x[j+1] > x[j])
                     {
-                        [x[j + 1],x[j]] = [x[j],x[j + 1]]
+                        let temp = x[j];
+                        x[j] = x[j+1];
+                        x[j+1] = temp;
                     }
                     
                 }
@@ -67,4 +71,4 @@ let tab9 =  [8, 3, 14, 10, 5]
 let tab10 =  [9, 19, 11, 17, 18]
 
 
-tri(tab10,'desc');
+tri(tab10,'asc');
