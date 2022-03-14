@@ -1,51 +1,47 @@
-let tempArr = [];
-let tempIndex;
-let tempValue;
-
-function tri(arr,y)
+function tri(x,y)
 {
-    if (Array.isArray(arr))
+    if (Array.isArray(x))
     {
         if (y === 'asc')
         {
 
-            for(i=0; i<arr.length; i++)            
+            for(i=0; i<x.length; i++)            
             {
 
-                for (j=0; j<arr.length - i - 1; j++)
+                for (j=0; j<x.length - i - 1; j++)
                 {
                     
-                    if(arr[j+1] <arr[j])
+                    if(x[j+1] < x[j])
                     {
-                        [arr[j + 1],arr[j]] = [arr[j],arr[j + 1]]
+                        [x[j + 1],x[j]] = [x[j],x[j + 1]]
                     }
                     
                 }
 
             }
 
-            console.table(arr);
+            console.table(x);
 
         }
         else if (y === 'desc')
         {
 
-            for(i=0; i<arr.length; i++)            
+            for(i=0; i<x.length; i++)            
             {
 
-                for (j=0; j<arr.length - i - 1; j++)
+                for (j=0; j<x.length - i - 1; j++)
                 {
                     
-                    if(arr[j+1] > arr[j])
+                    if(x[j+1] > x[j])
                     {
-                        [arr[j + 1],arr[j]] = [arr[j],arr[j + 1]]
+                        [x[j + 1],x[j]] = [x[j],x[j + 1]]
                     }
                     
                 }
 
             }
 
-            console.table(arr);
+            console.table(x);
         }
         else
         {
