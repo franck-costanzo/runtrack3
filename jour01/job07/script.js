@@ -47,4 +47,4 @@ function jourtravaille(date)
 }
 
 
-jourtravaille(new Date(2020, 0, 2));
+jourtravaille(new Date(2020, 7, 15));

@@ -1,4 +1,4 @@
-function bisextile(année)
-{
-    (année % 4 == 0) ? console.log(true) : console.log(false);
+function bisextile(year) {
+
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 }
