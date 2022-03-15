@@ -1,0 +1,13 @@
+body{
+    min-height: 4096px;
+}
+
+footer{
+    --position: 0%;
+    height:30px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #fdcd3b var(--position), white 0%);
+}
