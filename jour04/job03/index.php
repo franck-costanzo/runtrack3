@@ -11,9 +11,11 @@
     
     <form method="post">
         <input type="text" name="id">
-        <input type="text" name="name">
-        <select name="type"></select>
-        <button type="submit" name="submit" value="filtrer">
+        <input type="text" name="nom">
+        <select name="type">
+            <option value=""></option>
+        </select>
+        <input type="button" value="filtrer">
     </form>
 </body>
 </html>
