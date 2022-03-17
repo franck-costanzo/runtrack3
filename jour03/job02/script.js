@@ -5,36 +5,38 @@ $(document).ready(function(){
     
     //FUNCTIONS    
     
-        //shuffle function
-        function shuffle(array) 
+    //shuffle function
+    function shuffle(array) 
+    {
+        let currentIndex = array.length,  randomIndex;
+    
+        // While there remain elements to shuffle...
+        while (currentIndex != 0) 
         {
-            let currentIndex = array.length,  randomIndex;
-        
-            // While there remain elements to shuffle...
-            while (currentIndex != 0) 
-            {
-        
-            // Pick a remaining element...
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex--;
-        
-            // And swap it with the current element.
-            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-            }
-        
-            return array;
+    
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+    
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
         }
+    
+        return array;
+    }
 
-        //img appending function
-        function appendImg(arrImg){
-            for (let i = 0; i< arrImg.length; i++){
-                let temp = arrImg;
-                $('#melangees').append(temp[i]);
-            }
+    //img appending function
+    function appendImg(arrImg){
+        for (let i = 0; i< arrImg.length; i++){
+            let temp = arrImg;
+            $('#melangees').append(temp[i]);
         }
+    }
 
     //DATA
-    //weird bug, if i shuffle my const array and 
+
+    //weird bug, if i shuffle my const array and set it in an another variable,
+    //it shuffles my const array nevertheless
     const sortedImgs = [    '<img src="imgs/arc1.png" class="images">',
                             '<img src="imgs/arc2.png" class="images">',
                             '<img src="imgs/arc3.png" class="images">',
@@ -48,6 +50,7 @@ $(document).ready(function(){
                             '<img src="imgs/arc4.png" class="images">',
                             '<img src="imgs/arc5.png" class="images">',
                             '<img src="imgs/arc6.png" class="images">'];
+                            
     let imgArray = shuffle(arrayToSort);
     let tempArr = [];
     let count = 0
