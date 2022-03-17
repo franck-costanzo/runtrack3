@@ -8,6 +8,12 @@
     <script src="script.js"></script>
 </head>
 <body style="display:flex; flex-direction: column; justify-content:center; align-items:center">
-    <button id="button">BUTTON</button>
+    
+    <form method="post">
+        <input type="text" name="id">
+        <input type="text" name="name">
+        <select name="type"></select>
+        <button type="submit" name="submit" value="filtrer">
+    </form>
 </body>
 </html>
