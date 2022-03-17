@@ -1,22 +1,11 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     
-    //create select const to append options
-    const select = document.querySelector('select');
-    const button = document.querySelector("input[value=filtrer]");
-    const id = document.querySelector('input[name=id]');
-    const nom = document.querySelector('input[name=nom]');
-    const body = document.querySelector('body');
-
-    //create set so as to avoid having double values
-    let typeSet = new Set()
-
+    //FUNCTIONS
     async function getData () 
     {        
 
         await fetch('pokemon.json')
-        .then((response) => response.json())
-        
-        
+        .then((response) => response.json()) 
         .then((response) => {
             
             //getting the size of the response object fields
@@ -56,27 +45,85 @@ document.addEventListener("DOMContentLoaded", (event) => {
         fetch('pokemon.json')
         .then((response) => response.json())
         .then((response) => {
+
+            let count = 0;
             //getting the size of the response object fields
             for(let i = 0; i<Object.keys(response).length ;i++)
             {   
                 
                 if (response[i].id == id)
                 {
-                    var data = (response[i]);
+                    let data = (response[i]);
                     Object.keys(data).forEach(function(key) {
                         let pre = document.createElement('pre');
                         pre.innerHTML = key + ' : ' + JSON.stringify(data[key]);
                         body.appendChild(pre);
                         console.log('Key : ' + key + ', Value : ' + JSON.stringify(data[key]))
                     })
-                    
+                    count++;
                 }
+            }
+
+            if (count == 0)
+            {
+                let pre = document.createElement('pre');
+                    pre.innerHTML = "Il n'y a pas de pokemon avec cet Id !"
+                    body.appendChild(pre);
             }
         })
     }
-   
+
+    //TODO FAIRE QUE CA MARCHE FFS!
+    function getPokemonsByName(name)
+    {
+        fetch('pokemon.json')
+        .then((response) => response.json())
+        .then((response) => {
+
+            let count = 0;
+            //getting the size of the response object fields
+            for(let i = 0; i<Object.keys(response).length ;i++)
+            {   
+                if (response[i].name == name)
+                {
+                    let data = (response[i]);
+                    Object.keys(data).forEach(function(key) {
+                        let pre = document.createElement('pre');
+                        pre.innerHTML = key + ' : ' + JSON.stringify(data[key]);
+                        body.appendChild(pre);
+                        console.log('Key : ' + key + ', Value : ' + JSON.stringify(data[key]))
+                    })
+                    count++;
+                }
+            }
+
+            if (count == 0)
+            {
+                let pre = document.createElement('pre');
+                    pre.innerHTML = "Il n'y a pas de pokemon avec ce nom !"
+                    body.appendChild(pre);
+            }
+        })
+    }
+
+    
+
+    //DATA
+
+    //create select const to append options
+    const select = document.querySelector('select');
+    const button = document.querySelector("input[value=filtrer]");
+    const id = document.querySelector('input[name=id]');
+    const nom = document.querySelector('input[name=nom]');
+    const body = document.querySelector('body');
+
+    //create set so as to avoid having double values
+    let typeSet = new Set()
+
+    //inject into select
     getData();
 
+    //EVENTS
     button.addEventListener('click', () => {
         let textId = id.value;
         let textNom = nom.value;
@@ -85,12 +132,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         if (textId.length) 
         {
-            console.log('YOUPI KO')
-            let tempId = getPokemonsById(textId);
+            getPokemonsById(textId);
         }
         else if (textNom.length) 
         {
-            console.log('youpi nom')
+            getPokemonsByName(textNom);
         }
 
         if (textSelect.length) 
