@@ -46,8 +46,6 @@ Class User extends Model
         return $infos;
     }
 
-
-
 }
 
     
