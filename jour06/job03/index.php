@@ -13,5 +13,7 @@
     <section class="section"></section>
     <section class="section"></section>
     
+
+    <p>© Copyright Céline Emptoz Lacote</p>
 </body>
 </html>

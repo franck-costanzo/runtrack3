@@ -26,11 +26,15 @@
     </nav>
     
     </header>
-    <div>
+    
+    <main>
         <section class="section"></section>
         <section class="section"></section>
         <section class="section"></section>
         <section class="section"></section>
-    </div>
+    </main>
+
+    <p>© Copyright Céline Emptoz Lacote</p>
+    
 </body>
 </html>

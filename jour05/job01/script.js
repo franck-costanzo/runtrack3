@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     prenom.addEventListener('keyup', () => {
         let tempPrenom = prenom.value;
         let warning = document.createElement('p');
-        let p = document.getElementById('warningNom');
+        let p = document.getElementById('warningPrenom');
         
         if(tempPrenom.length < 4)
         {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
                 warning.innerHTML = "La taille de votre prénom est trop petite";
                 warning.style.color = "red";
-                warning.id = "warningNom"
+                warning.id = "warningPrenom"
                 prenom.after(warning);            
         }
         else
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     email.addEventListener('keyup', () => {
         let tempEmail = email.value;
         let warning = document.createElement('p');
-        let p = document.getElementById('warningNom');
+        let p = document.getElementById('warningEmail');
         
         if(!tempEmail.match(/^[a-z0-9._-]+[@]+[a-zA-Z0-9._-]+[.]+[a-z]{2,3}$/))
         {
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             warning.innerHTML = "Wrong email format";
             warning.style.color = "red";
-            warning.id = "warningNom"
+            warning.id = "warningEmail"
             email.after(warning);            
         }
         else
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                         {
                             warning.innerHTML = "Email already exists!";
                             warning.style.color = "red";
-                            warning.id = "warningNom"
+                            warning.id = "warningEmail"
                             email.after(warning);
                         }
                     })
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     password1.addEventListener('keyup', () => {
         let tempPassword = password1.value;
         let warning = document.createElement('p');
-        let p = document.getElementById('warningNom');
+        let p = document.getElementById('warningPwd1');
         
         if(!tempPassword.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/))
         {
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             warning.innerHTML = "Minimum eight characters, at least one letter, one number and one special character";
             warning.style.color = "red";
-            warning.id = "warningNom"
+            warning.id = "warningPwd1"
             password1.after(warning);            
         }
         else
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     password2.addEventListener('keyup', () => {
         let tempPassword = password2.value;
         let warning = document.createElement('p');
-        let p = document.getElementById('warningNom');
+        let p = document.getElementById('warningPwd2');
         
         if(!tempPassword.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/))
         {
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             warning.innerHTML = "Minimum eight characters, at least one letter, one number and one special character";
             warning.style.color = "red";
-            warning.id = "warningNom"
+            warning.id = "warningPwd2"
             password2.after(warning);            
         }
         else
