@@ -15,18 +15,18 @@
 <body class="grey lighten-3">
    
     <header>     
-        <nav class="teal lighten-3">
+        <nav class="blue lighten-1">
             <div class="nav-wrapper">
                 <div class="row">
                     <div>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                        <a href="#" class="brand-logo "><img src="logo.png" class="responsive-img col m4 s4" alt=""></a>
+                        <a href="#" class="brand-logo "><img src="imgs/pokeball.svg" class="responsive-img col m4 s4" alt=""></a>
                     </div>  
                     
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#">Polyommatus icarus</a></li>
-                        <li><a href="#">Limenitis arthemis</a></li>
-                        <li><a href="#">Araschnia levana</a></li>
+                        <li><a href="#">KANTO DEX</a></li>
+                        <li><a href="#">JOHTO DEX</a></li>
+                        <li><a href="#">ALOLA DEX</a></li>
                     </ul>     
                 </div>
             
@@ -35,25 +35,25 @@
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">Polyommatus icarus</a></li>
-            <li><a href="#">Limenitis arthemis</a></li>
-            <li><a href="#">Araschnia levana</a></li>
+            <li><a href="#">KANTO DEX</a></li>
+            <li><a href="#">JOHTO DEX</a></li>
+            <li><a href="#">ALOLA DEX</a></li>           
         </ul>   
     </header>
     
     <main>
         <div class="parallax-container">
-            <div class="parallax"><img src="img4.jpg"></div>
+            <div class="parallax"><img src="imgs/pokemonsBanner.jpg"></div>
         </div>
 
-        <h1  class="center-align red-text">Merci Céline</h1>
+        <h1  class="center-align red-text">Pokemon</h1>
 
-        <section class="container ">
-            <div class="row ">
+        <section class="container">
+            <div class="row">
                 <div class="col s12 m6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="img1.jpg">
+                            <img src="imgs/tokorico.png">
                             <span class="card-title red-text">Card Title</span>
                         </div>
                         <div class="card-content">
@@ -66,7 +66,7 @@
                 <div class="col s12 m6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="img2.jpg">
+                            <img src="imgs/ronflex.png">
                             <span class="card-title red-text">Card Title</span>
                         </div>
                         <div class="card-content">
@@ -84,7 +84,7 @@
             <div class="col s12 m4 ">
                 <div class="card">
                     <div class="card-image">
-                        <img src="img3.jpg">
+                        <img src="imgs/groudon.png">
                         <span class="card-title red-text">Card Title</span>
                     </div>
                     <div class="card-content">
@@ -97,7 +97,7 @@
             <div class="col s12 m4 ">
                 <div class="card">
                     <div class="card-image">
-                        <img src="img6.jpg">
+                        <img src="imgs/amphinobi.png">
                         <span class="card-title red-text">Card Title</span>
                     </div>
                     <div class="card-content">
@@ -111,7 +111,7 @@
             <div class="col s12 m4 ">
                 <div class="card">
                     <div class="card-image">
-                        <img src="img7.jpg">
+                        <img src="imgs/zacian.png">
                         <span class="card-title red-text">Card Title</span>
                     </div>
                     <div class="card-content">
@@ -124,47 +124,91 @@
         </div>
         </section>
 
-        <section class=" teal lighten-3 section">
+        <section class="blue lighten-1 section">
             <div class="row">
-                <h2 class="header center-align red-text">A majestic flight</h2>
-                <p class="grey-text text-darken-3 lighten-3 col s10 offset-s1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quisquam cumque et ducimus ut? Quod commodi sint repellendus! Iure, magnam eligendi et ratione sunt sint aut facere voluptate commodi nisi!
-                Dolor sapiente doloribus quod deserunt, harum voluptas tenetur porro ipsum ducimus perferendis. Accusantium id minima rem, iste vel repudiandae velit ullam repellat consequatur, aliquid magni nam debitis saepe corporis labore?
-                Debitis corporis labore, quae asperiores beatae autem excepturi similique eaque, sint quisquam pariatur corrupti rerum! Quos, accusamus aut, molestiae nostrum accusantium labore unde consectetur, deleniti tenetur harum incidunt? Quaerat, incidunt!
-                Perspiciatis odio repellendus autem ex quo laboriosam, debitis provident dicta soluta aperiam dolorum, consequuntur, alias maxime dolore beatae labore. Sint nobis molestiae doloribus officiis voluptatum exercitationem esse cum. Quibusdam, commodi!
-                Adipisci enim architecto magni amet natus voluptates inventore sint placeat iure distinctio! Quisquam, sint cumque assumenda officia harum reiciendis ab, earum impedit in pariatur omnis, ea aut quo. Asperiores, obcaecati!
-                Sapiente expedita, dignissimos autem vero magni iure voluptatibus modi hic natus maxime aperiam maiores quos eum est obcaecati reiciendis molestias esse. Officia iste vel autem delectus aliquam quidem consectetur reprehenderit.
-                Ratione veniam odit, reiciendis facere fugiat repudiandae fuga corrupti architecto soluta. Natus, similique ab quam dicta, consequuntur necessitatibus odio architecto dolores doloribus voluptatibus obcaecati quisquam fuga nobis iusto fugiat explicabo!
-                Dolorum, porro modi. Iste doloribus saepe illo, aliquam, reiciendis sunt fuga error sit necessitatibus neque ut distinctio impedit officia quisquam nostrum quo laborum esse architecto mollitia tempora quis pariatur autem!
-                Ut cumque dignissimos ea quia ipsum, beatae iste quisquam saepe maiores! Similique eos eligendi in minus, error vero amet dolore dignissimos voluptates voluptate quibusdam, maxime numquam rem impedit vitae explicabo.
-                Hic dolores, praesentium facilis nihil eum quos eos autem ut explicabo corporis ipsa, amet, ex necessitatibus non maxime totam molestiae exercitationem sapiente repellat magnam mollitia libero ducimus harum consequuntur? Culpa?</p>
+                <h2 class="header center-align red-text">Un jour je serai le meilleur dresseur !</h2>
+                <p class="grey-text text-darken-3 lighten-3 col s10 offset-s1">
+                Un jour je serai le meilleur dresseur 
+                Je me battrai sans répit
+                Je ferai tout pour être vainqueur
+                Et gagner les défis
+                Je parcourrai la terre entière
+                Traquant avec espoir
+                Les Pokémon et leurs mystères
+                Le secret de leurs pouvoirs
+
+                (Refrain)
+                Pokémon !
+                Attrapez les tous
+                C'est notre histoire
+                Ensemble pour la victoire
+                Pokémon !
+                Rien ne nous arrêtera
+                Notre amitié triomphera
+                Pokémon !
+                Attrapez les tous
+                Même à notre âge !
+                Un voyage d'apprentissage
+                Ça demande du courage !
+                Po-ké-mon !
+                Attrapez-les tous!, attrapez-les tous!
+                Yeah !
+
+                Rien ni personne sur mon chemin
+                Ne pourra me briser
+                Car pour accomplir mon destin
+                Je suis déterminé
+                Quand il faudra passer à l'action
+                Nos amis seront là
+                Et tous ensemble nous gagnerons
+                Le dernier des combats !
+
+                (Refrain)
+                Pokémon !
+                Attrapez les tous
+                C'est notre histoire
+                Ensemble pour la victoire
+                Pokémon !
+                Rien ne nous arrêtera
+                Notre amitié triomphera
+                Pokémon !
+                Attrapez les tous
+                Même à notre âge !
+                Un voyage d'apprentissage
+                Ça demande du courage !
+                Po-ké-mon !
+                Attrapez-les tous!, attrapez-les tous!
+                Yeah !
+                </p>
             </div>
         </section>
     
         <div class="parallax-container">
-            <div class="parallax"><img src="img5.jpg"></div>
+            <div class="parallax"><img src="imgs/everyPokemons.jpg"></div>
         </div>
 
         <footer class="page-footer blue-grey darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Pokemon</h5>
+                <p class="grey-text text-lighten-4">Une vie, une passion, un voyage</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Les éspeces</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Polyommatus icarus</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Limenitis arthemis</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Araschnia levana</a></li>
+                <h5 class="white-text">Pokedex</h5>
+                <ul>                  
+                    <li><a href="https://www.pokemon.com/fr/pokedex/" target="blank">REAL POKEDEX</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
-            <div class="container">
-            © Copyright Céline Emptoz Lacote
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <div class="container center-align">
+                © Copyright Céline Emptoz Lacote, merci tata !
+            
+            </div>
+            <div class="container center-align">
+                ©2022 Pokémon. ©1995 - 2022 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.
             </div>
           </div>
         </footer>
