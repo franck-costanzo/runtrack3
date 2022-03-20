@@ -12,21 +12,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     //surname form validator
     nom.addEventListener('keyup', () => {
         let tempNom = nom.value;
-        let warning = document.createElement('p');
-        let p = document.getElementById('warningNom');
+        let warningNom = document.createElement('p');
+        let pNom = document.getElementById('warningNom');
         
         if(tempNom.length < 4)
         {
-            if (p != null){p.remove();}
+            if (pNom != null){pNom.remove();}
 
-                warning.innerHTML = "La taille de votre nom est trop petite";
-                warning.style.color = "red";
-                warning.id = "warningNom"
+                warningNom.innerHTML = "La taille de votre nom est trop petite";
+                warningNom.style.color = "red";
+                warningNom.id = "warningNom"
                 nom.after(warning);            
         }
         else
         {            
-            if (p != null){p.remove();}
+            if (pNom != null){p.remove();}
         }
     })
 
@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     prenom.addEventListener('keyup', () => {
         let tempPrenom = prenom.value;
         let warning = document.createElement('p');
-        let p = document.getElementById('warningPrenom');
+        let pPrenom = document.getElementById('warningPrenom');
         
         if(tempPrenom.length < 4)
         {
-            if (p != null){p.remove();}
+            if (pPrenom != null){pPrenom.remove();}
 
                 warning.innerHTML = "La taille de votre prénom est trop petite";
                 warning.style.color = "red";
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
         else
         {            
-            if (p != null){p.remove();}
+            if (pPrenom != null){pPrenom.remove();}
         }
     })
 
@@ -55,11 +55,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     email.addEventListener('keyup', () => {
         let tempEmail = email.value;
         let warning = document.createElement('p');
-        let p = document.getElementById('warningEmail');
+        let pEmail = document.getElementById('warningEmail');
         
         if(!tempEmail.match(/^[a-z0-9._-]+[@]+[a-zA-Z0-9._-]+[.]+[a-z]{2,3}$/))
         {
-            if (p != null){p.remove();}
+            if (pEmail != null){pEmail.remove();}
 
             warning.innerHTML = "Wrong email format";
             warning.style.color = "red";
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
         else
         {            
-            if (p != null){p.remove();}
+            if (pEmail != null){pEmail.remove();}
             fetch('traitement.php')
             .then((response) => response.json())
             .then((response) => {
@@ -98,11 +98,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     password1.addEventListener('keyup', () => {
         let tempPassword = password1.value;
         let warning = document.createElement('p');
-        let p = document.getElementById('warningPwd1');
+        let pPwd1 = document.getElementById('warningPwd1');
         
         if(!tempPassword.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/))
         {
-            if (p != null){p.remove();}
+            if (pPwd1 != null){pPwd1.remove();}
 
             warning.innerHTML = "Minimum eight characters, at least one letter, one number and one special character";
             warning.style.color = "red";
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
         else
         {            
-            if (p != null){p.remove();}
+            if (pPwd1 != null){pPwd1.remove();}
         }
     })
 
@@ -119,11 +119,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     password2.addEventListener('keyup', () => {
         let tempPassword = password2.value;
         let warning = document.createElement('p');
-        let p = document.getElementById('warningPwd2');
+        let pPwd2 = document.getElementById('warningPwd2');
         
         if(!tempPassword.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/))
         {
-            if (p != null){p.remove();}
+            if (pPwd2 != null){pPwd2.remove();}
 
             warning.innerHTML = "Minimum eight characters, at least one letter, one number and one special character";
             warning.style.color = "red";
@@ -132,7 +132,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
         else
         {            
-            if (p != null){p.remove();}
+            if (pPwd2 != null){pPwd2.remove();}
         }
     })
+    
 })
