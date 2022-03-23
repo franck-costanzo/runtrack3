@@ -9,12 +9,24 @@
 <body>
 
     <header>
-        <button id="hamburger"></button>
+        <div id="show">
+            <a href="#show" id="show"><img src="hamburger.svg"></a>
+            <div id="cont">
+                <ul>
+                    <a href="#hide" id="hide" ><img src="cross.svg"></a>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
         <ul id="menu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Présentation</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        
     </header>
     
     <main>
@@ -24,6 +36,7 @@
         <section class="section"></section>
     </main>
     
-    
+
+</div>
 </body>
 </html>
