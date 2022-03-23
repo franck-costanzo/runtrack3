@@ -11,8 +11,7 @@
    
 </head>
 <body>
-  
-    <p>© Copyright Céline Emptoz Lacote</p>
+
 
 </body>
 </html>

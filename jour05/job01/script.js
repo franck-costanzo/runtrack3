@@ -6,28 +6,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const email = document.getElementById("email");
     const password1 = document.getElementById("password1");
     const password2 = document.getElementById("password2");
-    const emailRegex = new RegExp('/^[a-z0-9._-]+[@]+[a-zA-Z0-9._-]+[.]+[a-z]{2,3}$/');
 
     //EVENTS
     //surname form validator
     nom.addEventListener('keyup', () => {
+
         let tempNom = nom.value;
         let warningNom = document.createElement('p');
         let pNom = document.getElementById('warningNom');
         
         if(tempNom.length < 4)
         {
-            if (pNom != null){pNom.remove();}
-
-                warningNom.innerHTML = "La taille de votre nom est trop petite";
-                warningNom.style.color = "red";
-                warningNom.id = "warningNom"
-                nom.after(warning);            
+            if (pNom != null){ pNom.remove(); }
+            console.log('YOUPI!');
+            warningNom.innerHTML = "La taille de votre nom est trop petite";
+            warningNom.style.color = "red";
+            warningNom.id = "warningNom"
+            console.log(warningNom);
+            nom.after(warningNom);            
         }
         else
         {            
-            if (pNom != null){p.remove();}
+            if (pNom != null){ p.remove(); }
         }
+
     })
 
     //name form validator

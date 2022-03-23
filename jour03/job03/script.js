@@ -31,7 +31,8 @@ $(document).ready(function(){
         'imgs/5.png',
         'imgs/6.png',
         'imgs/7.png',
-        'imgs/8.png'];
+        'imgs/8.png',
+        ""];
 
     let imgToSort = [ 
         'imgs/1.png',
@@ -41,14 +42,14 @@ $(document).ready(function(){
         'imgs/5.png',
         'imgs/6.png',
         'imgs/7.png',
-        'imgs/8.png'];
+        'imgs/8.png',
+        ""];
 
     let imgArr = shuffle(imgToSort);
     let col = document.querySelectorAll('.col');
-    var tempId = 8;
     console.log(col);
 
-    for(let i=0;i<col.length-1; i++)
+    for(let i=0;i<col.length; i++)
     {
         col[i].src = imgArr[i];        
     }   
@@ -62,29 +63,44 @@ $(document).ready(function(){
 
     $('.col').click(function() {
 
-        //stock the src to use it
-        let src = $(this).attr('src');
-        let id = $(this).attr('id');
-        col[id].src = "";
-        col[tempId].src = src;
-        tempId = id;
-        
-        for(let i=0; i<col.length-1;i++)
+        //get the id of the empty block to be able to only switch between adjacent tiles
+        let emptyId;
+        for(let i = 0; i< col.length; i++)
         {
-            console.log(col[i].src);
+            let temp = col[i].src;
+            temp = temp.replace(col[i].src.substr(0,59), "");
+            console.log(temp);
+            if ( temp == "")
+            {
+                emptyId = i;
+            }
         }
 
+
+        //stock the src of the clicked tile to use it
+        let src = $(this).attr('src');
+        let id = $(this).attr('id');
+        if (id == (emptyId-3) || id == (emptyId-1) || id == (emptyId+1) || id == (emptyId+3))
+        {
+            col[id].src = "";
+            col[emptyId].src = src;
+        }
+        
+
         let count = 0;
-        for(let i=0;i<col.length-1;i++)
+
+        for(let i=0;i<col.length;i++)
         {            
             
-            let src = col[i].src;
-            src = src.replace(col[i].src.substr(0,40), "");
+            let src2 = col[i].src;
+            src2 = src2.replace(col[i].src.substr(0,59), "");
             let sortedImgSrc = sortedImgs[i];
             sortedImgSrc = sortedImgSrc.replace(sortedImgs[i].substr(0,5), "");
-            if ( src === sortedImgSrc){ count++ };
+
+            if ( src2 === sortedImgSrc){ count++ };
             console.log(count);
-            if (count === 8)
+
+            if (count == 9)
             {
                 const win = new Audio("sounds/youwin.mp3");
                 win.play();

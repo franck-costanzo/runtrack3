@@ -1,22 +1,23 @@
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .section {
-    height: 30vh;
-    width: 0%;
-    margin: 2% auto;
+    height: 20vh;
+    width: 40%;
+    margin: 10px auto;
     background-color: #88c1d0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
+
     .section {
-        width: 45%;
+        width: 50%;
     }
 }
 

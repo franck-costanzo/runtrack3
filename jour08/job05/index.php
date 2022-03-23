@@ -57,8 +57,10 @@
                             <span class="card-title red-text">Card Title</span>
                         </div>
                         <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup  quire little markup to use effectively. </p>
+                            <p>
+                                I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup  quire little markup to use effectively. 
+                            </p>
                         </div>
                     </div>
                 </div>
