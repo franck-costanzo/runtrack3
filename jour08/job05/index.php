@@ -46,7 +46,7 @@
             <div class="parallax"><img src="imgs/pokemonsBanner.jpg"></div>
         </div>
 
-        <h1  class="center-align red-text">Pokemon</h1>
+        <h1  class="center-align black-text">Pokemon</h1>
 
         <section class="container">
             <div class="row">
@@ -54,7 +54,7 @@
                     <div class="card">
                         <div class="card-image">
                             <img src="imgs/tokorico.png">
-                            <span class="card-title red-text">Card Title</span>
+                            <span class="card-title black-text">Card Title</span>
                         </div>
                         <div class="card-content">
                             <p>
@@ -69,7 +69,7 @@
                     <div class="card">
                         <div class="card-image">
                             <img src="imgs/ronflex.png">
-                            <span class="card-title red-text">Card Title</span>
+                            <span class="card-title black-text">Card Title</span>
                         </div>
                         <div class="card-content">
                             <p>I am a very simple card. I am good at containing small bits of information.
@@ -87,7 +87,7 @@
                 <div class="card">
                     <div class="card-image">
                         <img src="imgs/groudon.png">
-                        <span class="card-title red-text">Card Title</span>
+                        <span class="card-title black-text">Card Title</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -100,7 +100,7 @@
                 <div class="card">
                     <div class="card-image">
                         <img src="imgs/amphinobi.png">
-                        <span class="card-title red-text">Card Title</span>
+                        <span class="card-title black-text">Card Title</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -114,7 +114,7 @@
                 <div class="card">
                     <div class="card-image">
                         <img src="imgs/zacian.png">
-                        <span class="card-title red-text">Card Title</span>
+                        <span class="card-title black-text">Card Title</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -128,7 +128,7 @@
 
         <section class="blue lighten-1 section">
             <div class="row">
-                <h2 class="header center-align red-text">Un jour je serai le meilleur dresseur !</h2>
+                <h2 class="header center-align black-text">Un jour je serai le meilleur dresseur !</h2>
                 <p class="grey-text text-darken-3 lighten-3 col s10 offset-s1">
                 Un jour je serai le meilleur dresseur 
                 Je me battrai sans répit
@@ -205,10 +205,6 @@
             </div>
           </div>
           <div class="footer-copyright">
-            <div class="container center-align">
-                © Copyright Céline Emptoz Lacote, merci tata !
-            
-            </div>
             <div class="container center-align">
                 ©2022 Pokémon. ©1995 - 2022 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.
             </div>
